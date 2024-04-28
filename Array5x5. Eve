@@ -1,0 +1,25 @@
+Algoritmo Array5x5
+	Definir  Array, Fila, Columna, Num, resultado Como Entero
+	Dimension Array[5,5]
+	Fila = 0
+	Columna = 0
+	Num = 0
+	resultado = 0
+	Escribir " Introduce el número que quieres ver cuántas veces aparece en el array"
+	Leer Num
+	Para Fila = 0 Hasta 4 Con Paso 1 Hacer
+		Para  Columna = 0 Hasta 4 Con Paso 1 Hacer
+			Array[Fila, Columna] = azar(10)
+			Escribir Array[Fila, Columna] "   " Sin Saltar
+		    Si Array[Fila,Columna] = Num Entonces
+				resultado = resultado + 1
+				
+			FinSi
+			
+			
+		FinPara
+		Escribir " "
+		
+	FinPara
+	Escribir " La cantidad de veces que aparece el número que ingresaste en el array es: " resultado
+FinAlgoritmo
